@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+
+    <div class="section">
+        <h2>task 1</h2>
+        <script>
+            let x = 10;
+            let y = x + 5;
+            console.log("x:", x);
+            console.log("y:", y);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 2</h2>
+        <script>
+            function calculateSquare(num) {
+                return num * num;
+            }
+            const result = calculateSquare(4);
+            console.log("Square of 4:", result);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 3</h2>
+        <script>
+            let fruits = ["Apple", "Banana", "Mango"];
+            fruits.push("Orange");
+            fruits.unshift("Pineapple");
+            console.log("Updated fruits array:", fruits);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 4</h2>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 5</h2>
+        <script>
+            let str = "hello world";
+            let upperStr = str.toUpperCase();
+            console.log("Uppercase String:", upperStr);
+            console.log("Length of String:", upperStr.length);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 6</h2>
+        <script>
+            let car = {
+                make: "Toyota",
+                model: "Corolla",
+                year: 2020
+            };
+            console.log("Car Make:", car.make);
+            console.log("Car Model:", car.model);
+            console.log("Car Year:", car.year);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 7</h2>
+        <script>
+            let number = 7;
+            if (number % 2 === 0) {
+                console.log("Even");
+            } else {
+                console.log("Odd");
+            }
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 8</h2>
+        <script>
+            const numbers = [1, 2, 3, 4, 5];
+            const squaredNumbers = numbers.map(num => num * num);
+            console.log("Squared Numbers:", squaredNumbers);
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 9</h2>
+        <script>
+            let strNumber = "abc";
+            try {
+                let parsedNumber = parseInt(strNumber);
+                if (isNaN(parsedNumber)) {
+                    throw new Error("Cannot convert to number");
+                }
+                console.log("Parsed Number:", parsedNumber);
+            } catch (error) {
+                console.log("Error:", error.message);
+            }
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 10</h2>
+        <p id="demo">Original Text</p>
+        <button onclick="changeText()">Click Me</button>
+        <script>
+            function changeText() {
+                document.getElementById("demo").textContent = "Hello, World!";
+            }
+        </script>
+    </div>
+
+    <div class="section">
+        <h2>task 11</h2>
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+        <script>
+            function changeBackgroundColor() {
+                document.body.style.backgroundColor = "blue";
+            }
+        </script>
+    </div>
+
+    <div class="section">
+        <h2 >task 12</h2>
+        <script>
+            const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            const filteredNumbers = numbersArray.filter(num => num > 5);
+            console.log("Numbers greater than 5:", filteredNumbers);
+        </script>
+    </div>
+    
+
+</body>
+</html>
