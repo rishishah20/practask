@@ -122,9 +122,15 @@
     <div class="section">
         <h2>task 11</h2>
         <button onclick="changeBackgroundColor()">Change Background Color</button>
-        <script>
+       <script>
+            let isBlue = false;
             function changeBackgroundColor() {
-                document.body.style.backgroundColor = "blue";
+                if (isBlue) {
+                    document.body.style.backgroundColor = "white"; 
+                } else {
+                    document.body.style.backgroundColor = "blue"; 
+                }
+                isBlue = !isBlue;
             }
         </script>
     </div>
